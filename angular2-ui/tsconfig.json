@@ -7,11 +7,7 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
-     "types": [
-       "core-js",
-       "node"
-     ]
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules"
@@ -20,6 +16,5 @@
     "useWebpackText": true
   },
   "compileOnSave": false,
-  "buildOnSave": false,
-  "atom": { "rewriteTsconfig": false }
+  "buildOnSave": false
 }

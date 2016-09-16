@@ -10,7 +10,6 @@ native/
 caches/
 .sonar
 node
-/node_modules/
-/dist/
-/npm-debug.log
-/typings/
+node_modules
+dist
+npm-debug.log

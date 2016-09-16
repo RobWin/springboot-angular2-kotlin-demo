@@ -25,23 +25,8 @@ task npmClean(type: Delete) {
   delete "${webDir}/coverage"
 }
 
-// clean task for npm
-task clean {}
-clean.dependsOn(npmClean)
-
-// build task for npm
-task build {}
-build.dependsOn(npm_install)
-build.dependsOn(npm_run_build)
-
-// assemble task for npm
-task assemble {}
-assemble.dependsOn(build)
-
-// check task for npm
-task check {}
-check.dependsOn(npm_run_test)
-
-// run all task
-task runAll{}
-runAll.dependsOn(npm_run_start)
+task npmStartServer(type: NpmTask) {
+  args = ['start']
+  group = "node"
+  dependsOn("npmInstall")
+}

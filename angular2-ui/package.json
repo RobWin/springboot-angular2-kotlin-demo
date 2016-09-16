@@ -6,7 +6,11 @@
     "build": "webpack --inline --colors --progress --display-error-details --display-cached",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
-    "start": "npm run server"
+    "start": "npm run server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
   },
   "contributors": [
     "Robert Winkler"
@@ -23,7 +27,8 @@
     "typescript": "^2.0.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0",
-    "webpack-merge": "^0.8.4"
+    "webpack-merge": "^0.8.4",
+    "typings":"^1.3.2"
   },
   "dependencies": {
     "@angular/common": "2.0.0",
