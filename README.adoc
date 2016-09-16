@@ -1,1 +1,11 @@
 = Spring Boot, AngularJS 2, Kotlin demo
+
+This is a demo which shows how to use Spring Boot (written in Kotlin) and AngularJS 2.
+
+You can start the AngularJS 2 App with:
+
+`gradlew npmStartServer`
+
+You can start the Spring Boot App with:
+
+`gradlew bootRun`
