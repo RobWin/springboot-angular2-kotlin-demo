@@ -1,0 +1,5 @@
+spring:
+  application.name: sprinboot-angular2-kotlin
+  main.banner-mode: off
+
+server.port: 8090
