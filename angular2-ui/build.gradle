@@ -18,11 +18,10 @@ task compileTypeScript(type: NpmTask) {
 
 // clean node/node_modules/dist
 task npmClean(type: Delete) {
-  final def webDir = "${rootDir}/frontend"
+  final def webDir = "${project.projectDir}"
   delete "${webDir}/node"
   delete "${webDir}/node_modules"
   delete "${webDir}/dist"
-  delete "${webDir}/coverage"
 }
 
 task npmStartServer(type: NpmTask) {
