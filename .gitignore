@@ -9,7 +9,7 @@ build
 native/
 caches/
 .sonar
-node
+angular2-ui/node
 node_modules
 dist
 npm-debug.log
