@@ -17,6 +17,6 @@ Webpack proxies the request from Angular2 to Spring Boot.
 
 TODOs:
 
-- [x] Angular's Tour of Heroes tutorial
-- [] Add Angular2 app as a static resource to the Spring Boot app
-- [] Implement authentication/authorization with Spring Security
+- [x] Implement Angular's Tour of Heroes tutorial
+- Add Angular2 app as a static resource to the Spring Boot app
+- Implement authentication/authorization with Spring Security and JWT Tokens
