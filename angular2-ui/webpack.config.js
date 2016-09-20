@@ -49,7 +49,14 @@ var defaultConfig = {
 
   devServer: {
     historyApiFallback: true,
-    watchOptions: { aggregateTimeout: 300, poll: 1000 }
+    watchOptions: { aggregateTimeout: 300, poll: 1000 },
+    proxy: {
+      '/api/*': {
+        target: 'http://localhost:8090',
+        secure: false,
+        changeOrigin: true
+      }
+    }
   },
 
   node: {

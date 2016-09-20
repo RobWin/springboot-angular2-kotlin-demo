@@ -3,3 +3,6 @@ spring:
   main.banner-mode: off
 
 server.port: 8090
+
+spring.jpa.hibernate:
+    ddl-auto: none

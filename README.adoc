@@ -1,11 +1,14 @@
 = Spring Boot, AngularJS 2, Kotlin demo
 
-This is a demo which shows how to use Spring Boot (written in Kotlin) and AngularJS 2.
+This is a demo which shows how to use Spring Boot, Spring Data JPA and AngularJS 2.
+The demo is an implementation of Angular's Tour of Heroes tutorial. The demo is written in Kotlin and TypeScript.
 
-You can start the AngularJS 2 App with:
+The Heroes are stored in an in-memory H2 database. The H2 schema is managed by Flyway.
+
+You can start the AngularJS 2 App and access it on `http://localhost:3000`:
 
 `gradlew npmStartServer`
 
-You can start the Spring Boot App with:
+You can start the Spring Boot App and access it on `http://localhost:8090:
 
 `gradlew bootRun`
