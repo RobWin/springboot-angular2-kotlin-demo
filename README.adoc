@@ -9,6 +9,14 @@ You can start the AngularJS 2 App and access it on `http://localhost:3000`:
 
 `gradlew npmStartServer`
 
-You can start the Spring Boot App and access it on `http://localhost:8090:
+You can start the Spring Boot App and access it on `http://localhost:8090`:
 
 `gradlew bootRun`
+
+Webpack proxies the request from Angular2 to Spring Boot.
+
+TODOs:
+
+- [x] Angular's Tour of Heroes tutorial
+- [] Add Angular2 app as a static resource to the Spring Boot app
+- [] Implement authentication/authorization with Spring Security
