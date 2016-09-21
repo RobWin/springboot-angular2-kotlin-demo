@@ -23,4 +23,4 @@ TODOs:
 
 == Angular's Tour of Heroes
 
-image::docs/tutorial.jpg[]
+image:docs/tutorial.jpg[]
