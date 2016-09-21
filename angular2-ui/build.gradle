@@ -2,6 +2,8 @@ plugins {
   id "com.moowork.node" version "0.13"
 }
 
+apply plugin: 'java'
+
 // configure gradle-node-plugin
 node {
   version = '6.5.0'
@@ -17,15 +19,30 @@ task compileTypeScript(type: NpmTask) {
 }
 
 // clean node/node_modules/dist
-task npmClean(type: Delete) {
+task npmClean(type: Delete, group: 'node') {
   final def webDir = "${project.projectDir}"
-  delete "${webDir}/node"
-  delete "${webDir}/node_modules"
+  //delete "${webDir}/node"
+  //delete "${webDir}/node_modules"
   delete "${webDir}/dist"
 }
+
+clean.dependsOn(npmClean)
 
 task npmStart(type: NpmTask) {
   args = ['start']
   group = "node"
   dependsOn("npmInstall")
+}
+
+task npmBuild(type: NpmTask) {
+  args = ['run', 'build']
+  group = "node"
+  dependsOn("npmInstall")
+}
+
+jar {
+  dependsOn("npmBuild")
+  from(fileTree("dist")) {
+    into "META-INF/resources"
+  }
 }

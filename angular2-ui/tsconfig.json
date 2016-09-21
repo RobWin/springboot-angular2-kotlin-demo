@@ -7,10 +7,15 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "types": [
+      "core-js",
+      "node"
+    ]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "typings"
   ],
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true
