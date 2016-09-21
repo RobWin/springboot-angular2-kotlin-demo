@@ -20,3 +20,7 @@ TODOs:
 - [x] Implement Angular's Tour of Heroes tutorial
 - Add Angular2 app as a static resource to the Spring Boot app
 - Implement authentication/authorization with Spring Security and JWT Tokens
+
+== Angular's Tour of Heroes
+
+image::docs/tutorial.jpg[]

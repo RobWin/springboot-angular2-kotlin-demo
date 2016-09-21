@@ -52,7 +52,7 @@ export class HeroesService {
     return this.http
       .post(this.heroesUrl, JSON.stringify({name: name}), {headers: this.headers})
       .toPromise()
-      .then(res => res.json().heroes)
+      .then(res => res.json())
       .catch(this.handleError);
   }
 

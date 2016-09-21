@@ -1,5 +1,5 @@
 CREATE TABLE heroes (
-  id int PRIMARY KEY,
+  id int PRIMARY KEY AUTO_INCREMENT,
   name varchar(256) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

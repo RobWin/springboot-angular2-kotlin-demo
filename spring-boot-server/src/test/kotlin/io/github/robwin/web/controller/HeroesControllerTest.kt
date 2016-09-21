@@ -30,7 +30,7 @@ class HeroesControllerTest {
     val heroResponse = restTemplate.postForEntity("/api/heroes", Hero(name = "New name"), Hero::class.java)
     assertThat(heroResponse.statusCode).isEqualTo(HttpStatus.CREATED)
     assertThat(heroResponse.body).isNotNull()
-    assertThat(heroResponse.body.id).isNotNull()
+    assertThat(heroResponse.body.id).isNotEqualTo(0)
     assertThat(heroResponse.body.name).isEqualTo("New name")
     assertThat(heroResponse.headers["location"]).isNotNull()
 
