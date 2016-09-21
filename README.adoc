@@ -13,12 +13,11 @@ You can start the Spring Boot App and access it on `http://localhost:8090`:
 
 `gradlew bootRun`
 
-Webpack proxies the request from Angular2 to Spring Boot.
+Webpack proxies the HTTP requests from Angular2 to Spring Boot so that there is no need for Cross-Origin Resource Sharing (CORS).
 
 You can package the Spring Boot App and Angular2 App into one Jar file:
 
 `gradlew build`
-
 
 The Angular2 App is served as static content under `http://localhost:8090/index.html`, when you start the application:
 
