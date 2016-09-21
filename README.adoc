@@ -20,7 +20,7 @@ You can package the Spring Boot App and Angular2 App into one Jar file:
 `gradlew build`
 
 
-The Angular2 App is served as static content under `http://localhost:8090/index.html`, when you start the application`:
+The Angular2 App is served as static content under `http://localhost:8090/index.html`, when you start the application:
 
 `java -jar spring-boot-server-0.1.0.jar`
 
