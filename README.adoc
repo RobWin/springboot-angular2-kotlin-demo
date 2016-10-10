@@ -26,7 +26,7 @@ The Angular2 App is served as static content under `http://localhost:8090/index.
 TODOs:
 
 - [x] Implement Angular's Tour of Heroes tutorial
-- Add Angular2 app as a static resource to the Spring Boot app
+- [x] Add Angular2 app as a static resource to the Spring Boot app
 - Implement authentication/authorization with Spring Security and JWT Tokens
 
 == Angular's Tour of Heroes
